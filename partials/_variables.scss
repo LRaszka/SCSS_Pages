@@ -1,0 +1,22 @@
+//Theme: light, dark
+$theme: dark;
+
+//For light theme
+//Colors
+$background-color: rgb(175, 175, 175);
+$header-footer-background: rgb(37, 37, 37);
+$text-head-foot-color: #fff;
+$text-color: black;
+$ordinary-border: 2px solid black;
+
+//Sizes
+$header-height: 50px;
+$footer-height: $header-height;
+
+//For dark theme
+@if $theme == dark {
+    $background-color: rgb(36, 36, 36);
+    $text-color: white;
+    $ordinary-border: 2px solid white;
+    $header-footer-background: darken(rgb(37, 37, 37), 5%);
+}
